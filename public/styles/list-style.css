@@ -1,0 +1,84 @@
+
+        .content-section {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .create-button {
+            display: flex;
+            align-items: center;
+            background-color: #2ea44f;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .create-button img {
+            width: 16px;
+            margin-right: 5px;
+        }
+
+        .divider {
+            border-top: 1px solid #eaecef;
+            margin: 10px 0;
+        }
+
+        .data-table-container {
+            overflow-x: auto;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .data-table th,
+        .data-table td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #eaecef;
+        }
+
+        .action-icon {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .modal {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,.2);
+            padding: 10px;
+            border-radius: 4px;
+            z-index: 10;
+        }
+
+        .modal a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .modal a:hover {
+            background-color: #f6f8fa;
+        }
+
+        @media screen and (max-width: 768px) {
+            .content-header h1 {
+                font-size: 20px;
+            }
+
+            .create-button {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+
+            .create-button img {
+                width: 14px;
+            }
+        }
