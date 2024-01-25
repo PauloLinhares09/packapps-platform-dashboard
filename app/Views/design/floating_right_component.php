@@ -6,7 +6,7 @@
     if ($uriPath === 'assistents/create') {
         echo $this->extend('assistent/assistents');
     } else if ($uriPath === 'apikey/create') {
-        echo $this->extend('apikey/apikey');
+        echo $this->extend('apikey/apikeys');
     }
     
     

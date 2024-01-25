@@ -9,9 +9,6 @@ echo $this->endSection();
 ?>
 
 <?= $this->section('style-floating-right-component') ?>
-    <Style>
-
-    </Style>
 <?= $this->endSection() ?>
 
 <?= $this->section('component-content') ?>

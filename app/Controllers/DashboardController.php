@@ -25,7 +25,7 @@ class DashboardController extends BaseController
     }
 
     public function apikey(): string {
-        return view('/apikey/apikey');
+        return view('/apikey/apikeys');
     }
 
     public function createApikey(): string {
