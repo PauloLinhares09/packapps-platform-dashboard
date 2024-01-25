@@ -11,22 +11,56 @@
     <?= $this->renderSection('style-floating-right-component') ?>
     
 </head>
+<?php 
+    $request = \Config\Services::request();
+    $uriPath = $request->getPath();
+
+    $assistents = false;
+    $playground = false;
+    $temperature = false;
+    $apiKeys = false;
+    $credits = false;
+    $help = false;
+    $guide = false;
+    $user = false;
+    
+    if ($uriPath === 'assistents') {
+        $assistents = true;
+    } else if ($uriPath === 'playground') {
+        $playground = true;
+    } else if ($uriPath === 'apikey') {
+        $apiKeys = true;
+    } else if (strpos($uriPath, 'temperature') !== false) {
+        $temperature = true;
+    } else if ($uriPath === 'credits') {
+        $credits = true;
+    } else if ($uriPath === 'help') {
+        $help = true;
+    } else if ($uriPath === 'guide') {
+        $guide = true;
+    } else if ($uriPath === 'user') {
+        $user = true;
+    }
+    
+    
+       
+?>
 <body>
     <div id="sidebar">
         <!-- Substitua cada 'iconX.png' pelo caminho para o ícone correspondente -->
         <a href="<?= base_url('/home') ?>"><img src="../assets/package_2_FILL0_wght400_GRAD0_opsz24.png" alt="PackApps" style="margin-bottom: 20px;"></a>
 
-        <a href="<?= base_url('/assistents') ?>"><img src="../assets/robot_2_FILL0_wght400_GRAD0_opsz24.png" alt="Assistentes"><span>Assistentes</span></a>
-        <a href="<?= base_url('/playground') ?>"><img src="../assets/ar_stickers_FILL0_wght400_GRAD0_opsz24.png" alt="Testador de Assistente"><span>Testador de Assistente</span></a>
-        <a href="<?=  base_url('/apikey')?>"><img src="../assets/passkey_FILL0_wght400_GRAD0_opsz24.png" alt="Chave de API"><span>Chave de API</span></a>
-        <a href="<?=  base_url('/temperature/leads')?>""><img src="../assets/thermostat_FILL0_wght400_GRAD0_opsz24.png" alt="Chave de API"><span>Leads Temperatura</span></a>
-        <a href="#"><img src="../assets/leaderboard_FILL0_wght400_GRAD0_opsz24.png" alt="Créditos"><span>Créditos</span></a>
+        <a href="<?= base_url('/assistents') ?>" <?= $assistents == true ? "class=\"item-ativo\"" : "" ?>><img src="../assets/robot_2_FILL0_wght400_GRAD0_opsz24.png" alt="Assistentes"><span>Assistentes</span></a>
+        <a href="<?= base_url('/playground') ?>" <?= $playground == true ? "class=\"item-ativo\"" : "" ?>><img src="../assets/ar_stickers_FILL0_wght400_GRAD0_opsz24.png" alt="Testador de Assistente"><span>Testador de Assistente</span></a>
+        <a href="<?=  base_url('/apikey')?>" <?= $apiKeys == true ? "class=\"item-ativo\"" : "" ?>><img src="../assets/passkey_FILL0_wght400_GRAD0_opsz24.png" alt="Chave de API"><span>Chave de API</span></a>
+        <a href="<?=  base_url('/temperature/leads')?>" <?= $temperature == true ? "class=\"item-ativo\"" : "" ?>><img src="../assets/thermostat_FILL0_wght400_GRAD0_opsz24.png" alt="Chave de API"><span>Leads Temperatura</span></a>
+        <a href="#" <?= $credits == true ? "class=\"item-ativo\"" : "" ?> ><img src="../assets/leaderboard_FILL0_wght400_GRAD0_opsz24.png" alt="Créditos"><span>Créditos</span></a>
 
         <div id="sidebar-bottom">
             <!-- Substitua cada 'iconX.png' pelo caminho para o ícone correspondente -->
-            <a href="#"><img src="../assets/person_raised_hand_FILL0_wght400_GRAD0_opsz24.png" alt="Ajuda"><span>Ajuda</span></a>
-            <a href="#"><img src="../assets/developer_guide_FILL0_wght400_GRAD0_opsz24.png" alt="Guia"><span>Guia</span></a>
-            <a href="#"><img src="../assets/account_circle_FILL0_wght400_GRAD0_opsz24.png" alt="Usuário"><span>Usuário</span></a>
+            <a href="#" <?= $help == true ? "class=\"item-ativo\"" : "" ?>><img src="../assets/person_raised_hand_FILL0_wght400_GRAD0_opsz24.png" alt="Ajuda"><span>Ajuda</span></a>
+            <a href="#" <?= $guide == true ? "class=\"item-ativo\"" : "" ?>><img src="../assets/developer_guide_FILL0_wght400_GRAD0_opsz24.png" alt="Guia"><span>Guia</span></a>
+            <a href="#" <?= $user == true ? "class=\"item-ativo\"" : "" ?>><img src="../assets/account_circle_FILL0_wght400_GRAD0_opsz24.png" alt="Usuário"><span>Usuário</span></a>
         </div>
     </div>
     <header>

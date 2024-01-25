@@ -236,3 +236,7 @@
             align-items: center;
             border-top: 1px solid #eaecef;
         }
+
+        .item-ativo {
+            border-left: 4px solid #007bff; /* Cor da borda */    
+        }
