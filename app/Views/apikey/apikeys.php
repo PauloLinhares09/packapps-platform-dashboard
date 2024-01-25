@@ -108,7 +108,7 @@
 <div class="content-header">
     <h2>Chave de Api</h2>
         <button class="create-button">
-            <a href="<?= base_url('/apikey/create') ?>"><img src="../assets/add_FILL0_wght400_GRAD0_opsz24.png" alt="Ícone">Criar</a>
+            <a href="<?= base_url('/apikey/create') ?>"><img src="../assets/add_FILL0_wght400_GRAD0_opsz24.png" alt="Ícone">Criar Nova Chave de API</a>
         </button>
     </div>
 <?= $this->endSection() ?>

@@ -12,4 +12,4 @@ $routes->get('/assistents/create', 'DashboardController::createAssistent');
 $routes->get('/playground', 'DashboardController::playground');
 $routes->get('/apikey', 'DashboardController::apikey');
 $routes->get('/apikey/create', 'DashboardController::createApikey');
-$routes->get('/temperature', 'DashboardController::temperature');
+$routes->get('/temperature/leads', 'DashboardController::leads');

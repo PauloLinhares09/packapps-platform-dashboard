@@ -32,8 +32,8 @@ class DashboardController extends BaseController
         return view('/apikey/new_apikey');
     }
 
-    public function temperature(): string {
-        return view('/design/section_columns_component');
+    public function leads(): string {
+        return view('/temperature/leads');
     }
 
 

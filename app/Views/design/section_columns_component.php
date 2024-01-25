@@ -68,28 +68,26 @@
     </style>
 <?= $this->endSection() ?>
 
-<?= $this->section('title') ?>Playground<?= $this->endSection()?>
-
 
 <!-- Header  -->
 <?= $this->section('header') ?>
-    <h2>Testador de Assistente</h2>
+    <h2>Leads Temperatura</h2>
 <?= $this->endSection() ?>
 
 
 <!-- Content -->
 <?= $this->section('content') ?>
 
-<div id="main-content">
+    <div id="main-content">
         <!-- Section Left -->
         <section id="left-section">
-
+            <?= $this-> renderSection('left-section') ?>    
         </section>
 
 
         <!-- Section Right -->
         <section id="right-section">
-            
+            <?= $this-> renderSection('right-section') ?>
         </section>
     </div>
 

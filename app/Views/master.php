@@ -19,7 +19,7 @@
         <a href="<?= base_url('/assistents') ?>"><img src="../assets/robot_2_FILL0_wght400_GRAD0_opsz24.png" alt="Assistentes"><span>Assistentes</span></a>
         <a href="<?= base_url('/playground') ?>"><img src="../assets/ar_stickers_FILL0_wght400_GRAD0_opsz24.png" alt="Testador de Assistente"><span>Testador de Assistente</span></a>
         <a href="<?=  base_url('/apikey')?>"><img src="../assets/passkey_FILL0_wght400_GRAD0_opsz24.png" alt="Chave de API"><span>Chave de API</span></a>
-        <a href="<?=  base_url('/temperature')?>""><img src="../assets/thermostat_FILL0_wght400_GRAD0_opsz24.png" alt="Chave de API"><span>Leads Temperatura</span></a>
+        <a href="<?=  base_url('/temperature/leads')?>""><img src="../assets/thermostat_FILL0_wght400_GRAD0_opsz24.png" alt="Chave de API"><span>Leads Temperatura</span></a>
         <a href="#"><img src="../assets/leaderboard_FILL0_wght400_GRAD0_opsz24.png" alt="Créditos"><span>Créditos</span></a>
 
         <div id="sidebar-bottom">
