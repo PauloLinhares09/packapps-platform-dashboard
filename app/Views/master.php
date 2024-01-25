@@ -8,6 +8,7 @@
     <title><?= $this->renderSection('title') . ' - PackApps AI Platform' ?: 'PackApps AI Platform' ?> </title>
 
     <?= $this->renderSection('style') ?>
+    <?= $this->renderSection('style-floating-right-component') ?>
     
 </head>
 <body>
@@ -41,5 +42,8 @@
         <!-- Conteúdo do footer aqui -->
         <?= $this->renderSection('footer') ?>
     </footer>
+
+    <!-- Modal Right -->
+    <?= $this->renderSection('floating-right-component') ?>
 </body>
 </html>

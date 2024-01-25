@@ -8,3 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'DashboardController::index');
 $routes->get('/home', 'DashboardController::home');
 $routes->get('/assistents', 'DashboardController::assistents');
+$routes->get('/assistents/create', 'DashboardController::createAssistent');
