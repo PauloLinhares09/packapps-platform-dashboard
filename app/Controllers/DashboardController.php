@@ -23,4 +23,8 @@ class DashboardController extends BaseController
     public function playground(): string {
         return view('/assistent/playground');
     }
+
+    public function apikey(): string {
+        return view('/apikey/apikey');
+    }
 }
