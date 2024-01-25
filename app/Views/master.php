@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
-    <title>PackApps Platform</title>
+    <link rel="stylesheet" href="../styles/list-style.css">
+    <title><?= $this->renderSection('title') . ' - PackApps AI Platform' ?: 'PackApps AI Platform' ?> </title>
 
     <?= $this->renderSection('style') ?>
     
@@ -14,7 +15,7 @@
         <!-- Substitua cada 'iconX.png' pelo caminho para o ícone correspondente -->
         <a href="<?= base_url('/home') ?>"><img src="../assets/package_2_FILL0_wght400_GRAD0_opsz24.png" alt="PackApps" style="margin-bottom: 20px;"></a>
 
-        <a href="#"><img src="../assets/robot_2_FILL0_wght400_GRAD0_opsz24.png" alt="Assistentes"><span>Assistentes</span></a>
+        <a href="<?= base_url('/assistents') ?>"><img src="../assets/robot_2_FILL0_wght400_GRAD0_opsz24.png" alt="Assistentes"><span>Assistentes</span></a>
         <a href="#"><img src="../assets/ar_stickers_FILL0_wght400_GRAD0_opsz24.png" alt="Testador de Assistente"><span>Testador de Assistente</span></a>
         <a href="#"><img src="../assets/passkey_FILL0_wght400_GRAD0_opsz24.png" alt="Chave de API"><span>Chave de API</span></a>
         <a href="#"><img src="../assets/thermostat_FILL0_wght400_GRAD0_opsz24.png" alt="Chave de API"><span>Leads Temperatura</span></a>
