@@ -30,8 +30,8 @@
         
     <!-- Content here -->
     <div id="sidebar-submenu">        
-        <a href="#"><img src="../assets/robot_2_FILL0_wght400_GRAD0_opsz24.png" alt="Leads">Leads</a>
-        <a href="#"><img src="../assets/ar_stickers_FILL0_wght400_GRAD0_opsz24.png" alt="Clientes">Clientes</a>
+        <a href="<?= base_url('/temperature/leads') ?>"><img src="../assets/robot_2_FILL0_wght400_GRAD0_opsz24.png" alt="Leads">Leads</a>
+        <a href="<?= base_url('/temperature/clients') ?>"><img src="../assets/ar_stickers_FILL0_wght400_GRAD0_opsz24.png" alt="Clientes">Clientes</a>
 
         <div style="height: 5px; margin-bottom: 30px; border-bottom: 1px solid #eaecef;"></div>
         

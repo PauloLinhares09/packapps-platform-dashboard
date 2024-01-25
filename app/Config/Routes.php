@@ -13,3 +13,4 @@ $routes->get('/playground', 'DashboardController::playground');
 $routes->get('/apikey', 'DashboardController::apikey');
 $routes->get('/apikey/create', 'DashboardController::createApikey');
 $routes->get('/temperature/leads', 'DashboardController::leads');
+$routes->get('/temperature/clients', 'DashboardController::clients');

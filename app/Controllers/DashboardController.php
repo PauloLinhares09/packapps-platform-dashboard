@@ -36,5 +36,9 @@ class DashboardController extends BaseController
         return view('/temperature/leads');
     }
 
+    public function clients(): string {
+        return view('/temperature/clients');
+    }
+
 
 }
