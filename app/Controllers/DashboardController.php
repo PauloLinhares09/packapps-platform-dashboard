@@ -19,4 +19,8 @@ class DashboardController extends BaseController
     public function createAssistent(): string {
         return view('/assistent/new_assistent');
     }
+
+    public function playground(): string {
+        return view('/assistent/playground');
+    }
 }

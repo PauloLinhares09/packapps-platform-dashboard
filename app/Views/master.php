@@ -17,7 +17,7 @@
         <a href="<?= base_url('/home') ?>"><img src="../assets/package_2_FILL0_wght400_GRAD0_opsz24.png" alt="PackApps" style="margin-bottom: 20px;"></a>
 
         <a href="<?= base_url('/assistents') ?>"><img src="../assets/robot_2_FILL0_wght400_GRAD0_opsz24.png" alt="Assistentes"><span>Assistentes</span></a>
-        <a href="#"><img src="../assets/ar_stickers_FILL0_wght400_GRAD0_opsz24.png" alt="Testador de Assistente"><span>Testador de Assistente</span></a>
+        <a href="<?= base_url('/playground') ?>"><img src="../assets/ar_stickers_FILL0_wght400_GRAD0_opsz24.png" alt="Testador de Assistente"><span>Testador de Assistente</span></a>
         <a href="#"><img src="../assets/passkey_FILL0_wght400_GRAD0_opsz24.png" alt="Chave de API"><span>Chave de API</span></a>
         <a href="#"><img src="../assets/thermostat_FILL0_wght400_GRAD0_opsz24.png" alt="Chave de API"><span>Leads Temperatura</span></a>
         <a href="#"><img src="../assets/leaderboard_FILL0_wght400_GRAD0_opsz24.png" alt="Créditos"><span>Créditos</span></a>

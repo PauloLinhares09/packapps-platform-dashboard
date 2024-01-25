@@ -77,7 +77,7 @@ echo $this->endSection();
 <?= $this->endSection() ?>
 
 <?= $this->section('component-content') ?>
-<div id="content-section">
+    <div id="content-section">
         <form id="custom-form">
             <div class="form-group">
                 <label for="nome">Nome do Assistente</label>
