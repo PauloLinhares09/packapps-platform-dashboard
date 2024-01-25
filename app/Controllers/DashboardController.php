@@ -17,6 +17,6 @@ class DashboardController extends BaseController
     }
 
     public function createAssistent(): string {
-        return view('/design/floating_right_component');
+        return view('/assistent/new_assistent');
     }
 }

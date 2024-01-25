@@ -46,22 +46,22 @@
 
 <?= $this->section('content') ?>
 
-<!-- View personalizada -->
-<div id="custom-view">
-    <div id="custom-view-header">
-        <img id="close-icon" src="../assets/close_FILL0_wght400_GRAD0_opsz24.png">
-        <span id="custom-view-title">ActionBar Título</span>
+    <!-- View personalizada -->
+    <div id="custom-view">
+        <div id="custom-view-header">
+            <img id="close-icon" src="../assets/close_FILL0_wght400_GRAD0_opsz24.png">
+            <span id="custom-view-title"><?= $this->renderSection('component-header-title') ?> </span>
+        </div>
+
+        <!-- Conteúdo da view aqui -->
+        <?= $this->renderSection('component-content') ?>
+        
     </div>
 
-    <!-- Conteúdo da view aqui -->
-    
-    
-</div>
-
-<script>
-    document.getElementById('close-icon').addEventListener('click', function() {
-        document.getElementById('custom-view').style.display = 'none';
-    });
-</script>
+    <script>
+        document.getElementById('close-icon').addEventListener('click', function() {
+            document.getElementById('custom-view').style.display = 'none';
+        });
+    </script>
 
 <?= $this->endSection() ?>
