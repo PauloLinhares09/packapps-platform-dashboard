@@ -14,3 +14,5 @@ $routes->get('/apikey', 'DashboardController::apikey');
 $routes->get('/apikey/create', 'DashboardController::createApikey');
 $routes->get('/temperature/leads', 'DashboardController::leads');
 $routes->get('/temperature/clients', 'DashboardController::clients');
+$routes->get('/temperature/campaigns', 'DashboardController::campaigns');
+$routes->get('/temperature/sendMessage', 'DashboardController::sendMessage');

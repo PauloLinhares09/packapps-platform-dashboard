@@ -40,5 +40,13 @@ class DashboardController extends BaseController
         return view('/temperature/clients');
     }
 
+    public function campaigns(): string {
+        return view('/temperature/campaigns');
+    }
+
+    public function sendMessage(): string {
+        return view('/temperature/sendMessage');
+    }
+
 
 }

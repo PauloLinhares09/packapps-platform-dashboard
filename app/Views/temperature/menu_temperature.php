@@ -2,7 +2,6 @@
     <style>
         #sidebar-submenu {
             width: 100%;
-            height: 100vh;
             background-color: #fff;
             
         }
@@ -35,8 +34,8 @@
 
         <div style="height: 5px; margin-bottom: 30px; border-bottom: 1px solid #eaecef;"></div>
         
-        <a href="#"><img src="../assets/robot_2_FILL0_wght400_GRAD0_opsz24.png" alt="Leads">Campanhas</a>
-        <a href="#"><img src="../assets/robot_2_FILL0_wght400_GRAD0_opsz24.png" alt="Leads">Mensagem em massa</a>
+        <a href="<?= base_url('/temperature/campaigns') ?>"><img src="../assets/robot_2_FILL0_wght400_GRAD0_opsz24.png" alt="Leads">Campanhas</a>
+        <a href="<?= base_url('/temperature/sendMessage') ?>"><img src="../assets/robot_2_FILL0_wght400_GRAD0_opsz24.png" alt="Leads">Mensagem em massa</a>
     </div>
     
 
