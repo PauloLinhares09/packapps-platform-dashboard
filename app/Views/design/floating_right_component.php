@@ -1,4 +1,16 @@
-<?= $this->extend('assistent/assistents') ?>
+<?php 
+    $request = \Config\Services::request();
+    $uriPath = $request->getPath();
+
+    
+    if ($uriPath === 'assistents/create') {
+        echo $this->extend('assistent/assistents');
+    } else if ($uriPath === 'apikey/create') {
+        echo $this->extend('apikey/apikey');
+    }
+    
+    
+?>
 <?= $this->section('style-floating-right-component') ?>
 <style>
         /* Estilo da view lateral */
@@ -45,7 +57,6 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
-
     <!-- View personalizada -->
     <div id="custom-view">
         <div id="custom-view-header">

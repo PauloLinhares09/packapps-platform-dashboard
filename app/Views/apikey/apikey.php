@@ -100,7 +100,7 @@
     </style>
 <?= $this->endSection() ?>
 
-<?= $this->section('title') ?>Assistentes<?= $this->endSection()?>
+<?= $this->section('title') ?>Chave de API<?= $this->endSection()?>
 
 
 <!-- Header  -->

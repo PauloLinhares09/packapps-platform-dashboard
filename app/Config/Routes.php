@@ -11,3 +11,4 @@ $routes->get('/assistents', 'DashboardController::assistents');
 $routes->get('/assistents/create', 'DashboardController::createAssistent');
 $routes->get('/playground', 'DashboardController::playground');
 $routes->get('/apikey', 'DashboardController::apikey');
+$routes->get('/apikey/create', 'DashboardController::createApikey');
